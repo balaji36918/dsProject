@@ -42,7 +42,7 @@ def get_current_data_germany():
         full_list.append(each_dict['attributes'])
 
     pd_full_list=pd.DataFrame(full_list)
-    pd_full_list.to_csv('data/raw/GER_state_data.csv',sep=';')
+    pd_full_list.to_csv('data/raw/NPGEO/GER_state_data.csv',sep=';')
     print(' Number of regions rows: '+str(pd_full_list.shape[0]))
 
 if __name__ == '__main__':
